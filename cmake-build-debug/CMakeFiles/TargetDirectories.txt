@@ -1,0 +1,3 @@
+C:/Users/Tort-tue/Documents/42/Stud/libft/cmake-build-debug/CMakeFiles/Stud.dir
+C:/Users/Tort-tue/Documents/42/Stud/libft/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Tort-tue/Documents/42/Stud/libft/cmake-build-debug/CMakeFiles/rebuild_cache.dir
