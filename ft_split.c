@@ -2,20 +2,23 @@
 /*                                                                            */
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: enpassel <enpassel@student.42lyon.fr>      +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
+/*                                                    +:+ +:+        
+	+:+     */
+/*   By: enpassel <enpassel@student.42lyon.fr>      +#+  +:+      
+	+#+        */
+/*                                                +#+#+#+#+#+  
+	+#+           */
 /*   Created: 2024/11/06 11:23:58 by enpassel          #+#    #+#             */
 /*   Updated: 2024/11/06 11:23:58 by enpassel         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
 
-int ft_count_word(char const *s, char c)
+int	ft_count_word(char const *s, char c)
 {
-	int count;
-	int i;
-	int on_off;
+	int	count;
+	int	i;
+	int	on_off;
 
 	i = 0;
 	count = 0;
@@ -36,9 +39,9 @@ int ft_count_word(char const *s, char c)
 	return (count);
 }
 
-int ft_len(char const *s, int i, char c)
+int	ft_len(char const *s, int i, char c)
 {
-	int n;
+	int	n;
 
 	n = 0;
 	while (s[i] != c)
@@ -49,10 +52,10 @@ int ft_len(char const *s, int i, char c)
 	return (n);
 }
 
-char *ft_sndup(char const *s, int i, int size, char c)
+char	*ft_sndup(char const *s, int i, int size, char c)
 {
-	int n;
-	char *tab;
+	int		n;
+	char	*tab;
 
 	n = 0;
 	tab = malloc((size + 1) * sizeof(char));
@@ -68,13 +71,13 @@ char *ft_sndup(char const *s, int i, int size, char c)
 	return (tab);
 }
 
-char **ft_split(char const *s, char c)
+char	**ft_split(char const *s, char c)
 {
-	int i;
-	int size;
-	int len;
-	char **tab;
-	int k;
+	int		i;
+	int		size;
+	int		len;
+	int		k;
+	char	**tab;
 
 	size = ft_count_word(s, c);
 	tab = malloc((size + 1) * sizeof(tab));
