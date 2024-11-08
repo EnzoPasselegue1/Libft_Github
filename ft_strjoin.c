@@ -16,10 +16,10 @@
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {
-	int		i;
-	int		len1;
-	int		len2;
-	char	*tab;
+	int			i;
+	size_t		len1;
+	size_t		len2;
+	char		*tab;
 
 	if (s1 && s2)
 	{

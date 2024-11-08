@@ -16,9 +16,9 @@
 
 static int	ft_count_word(char const *s, char c)
 {
-	int	count;
-	int	i;
-	int	on_off;
+	size_t	count;
+	size_t	i;
+	int		on_off;
 
 	i = 0;
 	count = 0;
@@ -41,7 +41,7 @@ static int	ft_count_word(char const *s, char c)
 
 static int	ft_len(char const *s, int i, char c)
 {
-	int	n;
+	size_t	n;
 
 	n = 0;
 	while (s[i] != c && s[i])
@@ -54,8 +54,8 @@ static int	ft_len(char const *s, int i, char c)
 
 static char	*ft_strndup(char const *s, int i, int size, char c)
 {
-	int		n;
-	char	*tab;
+	size_t		n;
+	char		*tab;
 
 	n = 0;
 	tab = malloc((size + 1) * sizeof(char));
@@ -87,11 +87,11 @@ static char	**ft_free(char **tab)
 
 char	**ft_split(char const *s, char c)
 {
-	int		i;
-	int		size;
-	int		len;
-	int		k;
-	char	**tab;
+	size_t		i;
+	size_t		size;
+	size_t		len;
+	size_t		k;
+	char		**tab;
 
 	size = ft_count_word(s, c);
 	tab = malloc((size + 1) * sizeof(tab));
@@ -113,18 +113,3 @@ char	**ft_split(char const *s, char c)
 	}
 	return (tab);
 }
-/*
-int	main()
-{
-	char *prt = "xxxxxxxxhello!";
-	char c = 'x';
-	int	i = 0;
-	char **fin = ft_split(prt, c); 
-
-	while (fin[i])
-	{
-		printf("%s", fin[i]);
-		i++;
-	}
-	return (0);	
-}*/

@@ -17,7 +17,7 @@
 
 static int	num_len(int n)
 {
-	int	len;
+	size_t	len;
 
 	len = 0;
 	if (n <= 0)
@@ -34,10 +34,10 @@ static int	num_len(int n)
 
 char	*ft_itoa(int n)
 {
-	int		len;
-	int		is_negative;
-	char	*str;
-	long	longnum;
+	size_t		len;
+	int			is_negative;
+	char		*str;
+	long		longnum;
 
 	len = num_len(n);
 	str = malloc(len + 1);
@@ -60,7 +60,3 @@ char	*ft_itoa(int n)
 		str[0] = '-';
 	return (str);
 }
-// int	main()
-// {
-// 	printf("%s", ft_itoa(-2147483648));
-// }
