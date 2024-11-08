@@ -13,6 +13,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
+#include <stdio.h>
 
 static int	num_len(int n)
 {
@@ -36,34 +37,30 @@ char	*ft_itoa(int n)
 	int		len;
 	int		is_negative;
 	char	*str;
+	long	longnum;
 
 	len = num_len(n);
 	str = malloc(len + 1);
+	longnum = (long)n;
 	if (!str)
 		return (NULL);
 	str[len] = '\0';
-	if (n == 0)
-	{
-		str[0] = '0';
-		return (str);
-	}
 	is_negative = 0;
-	if (n < 0)
+	if (longnum < 0)
 	{
-		if (n == -2147483648)
-		{
-			str[--len] = '8';
-			n /= 10;
-		}
 		is_negative = 1;
-		n = -n;
+		longnum = -longnum;
 	}
-	while (n)
+	while (len)
 	{
-		str[--len] = (n % 10) + '0';
-		n /= 10;
+		str[--len] = (longnum % 10) + '0';
+		longnum /= 10;
 	}
 	if (is_negative)
-		str[--len] = '-';
+		str[0] = '-';
 	return (str);
 }
+// int	main()
+// {
+// 	printf("%s", ft_itoa(-2147483648));
+// }

@@ -66,7 +66,6 @@ void	*ft_calloc(size_t nmemb, size_t size);
 
 int		ft_printf(const char *format, ...);
 
-
 ////////BONUS//////////
 ////////STRUCTURE//////////
 

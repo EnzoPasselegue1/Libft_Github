@@ -15,32 +15,24 @@
 
 int	ft_atoi(const char *nptr)
 {
-	int	i;
-	int	count;
+	int				i;
+	int				count;
 	unsigned long	final;
 
 	i = 0;
 	count = 1;
 	final = 0;
-
-
-	while (nptr[i] == '\t' || nptr[i] == '\n' || nptr[i] == '\v'
-		|| nptr[i] == '\f' || nptr[i] == '\r' || nptr[i] == ' ')
-	{
+	while ((nptr[i] >= 9 && nptr[i] <= 13) || nptr[i] == 32)
 		i++;
-	}
 	if (nptr[i] == '-' || nptr[i] == '+')
-	{
-		if (nptr[i] == '-')
+		if (nptr[i++] == '-')
 			count *= -1;
-		i++;
-	}
-	
 	while (nptr[i] >= '0' && nptr[i] <= '9')
 	{
 		if (((final * 10) + (nptr[i] - 48)) > 9223372036854775807 && count == 1)
 			return (-1);
-		else if (((final * 10) + (nptr[i] - 48)) > 9223372036854775807 && count == -1)
+		else if (((final * 10) + (nptr[i] - 48)) > 9223372036854775807
+			&& count == -1)
 			return (0);
 		final = final * 10;
 		final = (final + (nptr[i] - 48));
@@ -48,7 +40,3 @@ int	ft_atoi(const char *nptr)
 	}
 	return (final * count);
 }
-// int	main(int argc, char **argv)
-// {
-// 	printf("%d\n", atoi(argv[1]));
-// }

@@ -71,10 +71,10 @@ static char	*ft_strndup(char const *s, int i, int size, char c)
 	return (tab);
 }
 
-static char **ft_free(char **tab)
+static char	**ft_free(char **tab)
 {
 	size_t	i;
-	
+
 	i = 0;
 	while (tab[i])
 	{
