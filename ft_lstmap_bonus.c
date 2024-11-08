@@ -16,36 +16,24 @@
 
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {
-	t_list	*new_list;
-	t_list	*new_elem;
-	t_list	*prev_elem;
-	void	*new_content;
+    t_list    *head;
+    t_list    *new_lst;
 
-	new_list = NULL;
-	new_elem = NULL;
-	prev_elem = NULL;
-	if (lst == NULL || f == NULL)
-		return (NULL);
-	while (lst != NULL)
-	{
-		new_content = f(lst->content);
-		if (new_content == NULL)
-		{
-			ft_lstclear(&new_list, del);
-			return (NULL);
-		}
-		new_elem = ft_lstnew(new_content);
-		if (new_elem == NULL)
-		{
-			ft_lstclear(&new_list, del);
-			return (NULL);
-		}
-		if (prev_elem == NULL)
-			new_list = new_elem;
-		else
-			prev_elem->next = new_elem;
-		prev_elem = new_elem;
-		lst = lst->next;
-	}
-	return (new_list);
+    new_lst = NULL;
+    head = malloc(sizeof(t_list));
+    if (!head || !lst)
+        return (NULL);
+    head->content = f(lst->content);
+    new_lst = head;
+    while (lst->next)
+    {
+        new_lst->next = malloc(sizeof(t_list));
+        if (!new_lst->next)
+            return (ft_lstclear(&head, del), NULL);
+        new_lst = new_lst->next;
+        lst = lst->next;
+        new_lst->content = f(lst->content);
+    }
+    new_lst->next = NULL;
+    return (head);
 }
