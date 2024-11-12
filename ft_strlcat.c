@@ -2,14 +2,11 @@
 /*                                                                            */
 /*                                                        :::      ::::::::   */
 /*   ft_strlcat.c                                       :+:      :+:    :+:   */
-/*                                                    +:+ +:+        
-	+:+     */
-/*   By: enpassel <enpassel@student.42lyon.fr>      +#+  +:+      
-	+#+        */
-/*                                                +#+#+#+#+#+  
-	+#+           */
-/*   Created: 2024/11/06 11:25:08 by enpassel          #+#    #+#             */
-/*   Updated: 2024/11/06 11:25:08 by enpassel         ###   ########lyon.fr   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: enpassel <enpassel@student.42lyon.fr>      +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/11/12 09:52:53 by enpassel          #+#    #+#             */
+/*   Updated: 2024/11/12 09:52:53 by enpassel         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"

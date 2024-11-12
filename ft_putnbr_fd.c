@@ -2,14 +2,11 @@
 /*                                                                            */
 /*                                                        :::      ::::::::   */
 /*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
-/*                                                    +:+ +:+        
-	+:+     */
-/*   By: enpassel <enpassel@student.42lyon.fr>      +#+  +:+      
-	+#+        */
-/*                                                +#+#+#+#+#+  
-	+#+           */
-/*   Created: 2024/11/06 11:23:19 by enpassel          #+#    #+#             */
-/*   Updated: 2024/11/06 11:23:19 by enpassel         ###   ########lyon.fr   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: enpassel <enpassel@student.42lyon.fr>      +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/11/12 09:52:03 by enpassel          #+#    #+#             */
+/*   Updated: 2024/11/12 09:52:03 by enpassel         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"

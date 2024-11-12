@@ -2,14 +2,11 @@
 /*                                                                            */
 /*                                                        :::      ::::::::   */
 /*   ft_lstsize_bonus.c                                 :+:      :+:    :+:   */
-/*                                                    +:+ +:+        
-	+:+     */
-/*   By: enpassel <enpassel@student.42lyon.fr>      +#+  +:+      
-	+#+        */
-/*                                                +#+#+#+#+#+  
-	+#+           */
-/*   Created: 2024/11/06 11:21:12 by enpassel          #+#    #+#             */
-/*   Updated: 2024/11/06 11:21:12 by enpassel         ###   ########lyon.fr   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: enpassel <enpassel@student.42lyon.fr>      +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/11/12 09:50:45 by enpassel          #+#    #+#             */
+/*   Updated: 2024/11/12 09:50:45 by enpassel         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"

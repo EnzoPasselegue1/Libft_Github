@@ -2,17 +2,15 @@
 /*                                                                            */
 /*                                                        :::      ::::::::   */
 /*   ft_strtrim.c                                       :+:      :+:    :+:   */
-/*                                                    +:+ +:+        
-	+:+     */
-/*   By: enpassel <enpassel@student.42lyon.fr>      +#+  +:+      
-	+#+        */
-/*                                                +#+#+#+#+#+  
-	+#+           */
-/*   Created: 2024/11/06 11:27:11 by enpassel          #+#    #+#             */
-/*   Updated: 2024/11/06 11:27:11 by enpassel         ###   ########lyon.fr   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: enpassel <enpassel@student.42lyon.fr>      +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/11/12 09:53:33 by enpassel          #+#    #+#             */
+/*   Updated: 2024/11/12 09:53:33 by enpassel         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
+#include <stdlib.h>
 
 char	*ft_strtrim(char const *s1, char const *set)
 {

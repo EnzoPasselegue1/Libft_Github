@@ -2,17 +2,35 @@
 /*                                                                            */
 /*                                                        :::      ::::::::   */
 /*   ft_strjoin.c                                       :+:      :+:    :+:   */
-/*                                                    +:+ +:+        
-	+:+     */
-/*   By: enpassel <enpassel@student.42lyon.fr>      +#+  +:+      
-	+#+        */
-/*                                                +#+#+#+#+#+  
-	+#+           */
-/*   Created: 2024/11/06 11:24:52 by enpassel          #+#    #+#             */
-/*   Updated: 2024/11/06 11:24:52 by enpassel         ###   ########lyon.fr   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: enpassel <enpassel@student.42lyon.fr>      +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/11/12 09:52:48 by enpassel          #+#    #+#             */
+/*   Updated: 2024/11/12 09:52:48 by enpassel         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
+#include <stdlib.h>
+
+char	*ft_strncpy(char *dest, const char *src, size_t n)
+{
+	size_t	i;
+
+	i = 0;
+	if (!dest)
+		return (NULL);
+	while (src[i] != '\0' && i < n)
+	{
+		dest[i] = src[i];
+		++i;
+	}
+	while (i < n)
+	{
+		dest[i] = '\0';
+		i++;
+	}
+	return (dest);
+}
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {

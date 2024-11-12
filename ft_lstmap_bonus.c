@@ -2,17 +2,15 @@
 /*                                                                            */
 /*                                                        :::      ::::::::   */
 /*   ft_lstmap_bonus.c                                  :+:      :+:    :+:   */
-/*                                                    +:+ +:+
-	+:+     */
-/*   By: enpassel <enpassel@student.42lyon.fr>      +#+  +:+
-	+#+        */
-/*                                                +#+#+#+#+#+
-	+#+           */
-/*   Created: 2024/11/06 11:20:36 by enpassel          #+#    #+#             */
-/*   Updated: 2024/11/06 11:20:36 by enpassel         ###   ########lyon.fr   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: enpassel <enpassel@student.42lyon.fr>      +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/11/12 09:50:33 by enpassel          #+#    #+#             */
+/*   Updated: 2024/11/12 09:50:33 by enpassel         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
+#include <stdlib.h>
 
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {

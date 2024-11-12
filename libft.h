@@ -12,10 +12,9 @@
 #ifndef LIBFT_H
 # define LIBFT_H
 
-# include <stdlib.h>
 # include <unistd.h>
 
-////////FONCTION//////////
+////////FUNCTION//////////
 
 int		ft_isascii(int c);
 int		ft_isprint(int c);
@@ -23,7 +22,6 @@ int		ft_isalpha(int c);
 int		ft_isdigit(int c);
 int		ft_isalnum(int c);
 int		ft_isgraph(int c);
-int		ft_ischarset(char test, const char *charset);
 
 int		ft_atoi(const char *str);
 char	*ft_itoa(int n);
@@ -63,12 +61,8 @@ int		ft_memcmp(const void *s1, const void *s2, size_t n);
 
 void	*ft_calloc(size_t nmemb, size_t size);
 
-int		ft_printf(const char *format, ...);
-
-int		main(void);
-
-////////BONUS//////////
-////////STRUCTURE//////////
+//////////BONUS//////////
+////////STRUCT//////////
 
 typedef struct s_list
 {
